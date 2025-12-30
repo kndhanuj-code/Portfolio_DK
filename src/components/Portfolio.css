@@ -1,0 +1,294 @@
+.bgc{
+
+  min-height: 100vh;
+ background: linear-gradient(135deg, #0f172a, #020617);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+.image{
+    width:100px ;
+    height:100px ;
+    border-radius:15px ;
+    border:2px solid black ;
+    background-color:inkblue ;
+    display: flex;
+    justify-content:center ;
+    align-items:center ;
+
+
+}
+
+.ani {
+      /* transition: transform 1s ease-in-out;  
+   animation: move 2s ease-in-out ;  */
+   color: white;
+   
+  
+}
+
+ /* @keyframes move {
+  from {
+    transform: translateX(-100px);
+    
+  }
+  to {
+    transform: translateX(50px);
+  }
+}
+
+.img {
+      transition: transform 1s ease-in-out;  
+   animation: image 2s ease-in-out ;
+  
+}
+
+@keyframes image {
+  from {
+    transform: translateX(100px);
+    
+  }
+  to {
+    transform: translateX(-50px);
+  }
+}  */
+
+.image {
+  animation: dance 3s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.delay1 { animation-delay: 0.2s; }
+.delay2 { animation-delay: 0.4s; }
+.delay3 { animation-delay: 0.6s; }
+.delay4 { animation-delay: 0.8s; }
+.delay5 { animation-delay: 1s; }
+
+.image img {
+  width: 70px;
+  height: 70px;
+}
+
+
+@keyframes dance {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+background-image: linear-gradient(to right top, #3d4c62, #15191b, #4a50c7, #987cc0, #5e528c);
+    
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.logo {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+span {
+  color: #ea1539;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ea1539;
+  border-bottom: 3px solid #ea1539;
+}
+
+.one {
+  background:   #b60715;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  color:white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.one:hover {
+  background: #f1415f;
+}
+
+section {
+  padding: 150px 9% 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+}
+
+.home-content h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.home-content h3 {
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.home-content p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background: transparent;
+  border: 1px solid #ea1539;
+  font-size: 25px;
+  text-decoration: none;
+  color: #ea1539;
+  border-radius: 50%;
+  margin: 30px 20px 40px 0;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #000;
+  transform: scale(1.1) translateY(-5px);
+  background: #ea1539;
+  box-shadow: 0 0 25px #ea1539;
+}
+
+
+
+
+
+
+
+
+
+.from-left {
+  animation: slideFromLeft 1.2s ease forwards;
+}
+
+
+.from-right {
+  animation: slideFromRight 1.2s ease forwards;
+}
+
+
+.from-top {
+  animation: slideFromTop 1.2s ease forwards;
+}
+
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.image {
+  width: 90px;            /* adjust if needed */
+  height: 90px;
+  border: 1px solid white; /* gray border */
+  border-radius: 12px;    /* optional – rounded corners */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.image img {
+  width: 60px;
+  height: auto;
+}
