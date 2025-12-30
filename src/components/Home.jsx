@@ -30,6 +30,7 @@ const Home = () => {
         <div className="home-content">
           <h1>          
             Hi, I'm <span>Dhanuj</span>
+            
           </h1>
 
           <h3>
